@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section__story {
+    margin: 5%;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.85rem;
+}
+
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 65%;
+    line-height: 200%;
+}
+
+.story {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+}
+
+.story h3 {
+    color: rgb(255, 255, 255);
+    place-self: center;
+}
+
+.story button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000000;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.85rem;
+    font-size: 70%;
+    place-self: center;
+}
+
+.clue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.clue button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ty__storyForm {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    display: flex;
+    border-radius: 8px;
+}
+
+.ty__storyForm span {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+}
+
+.ty__storyForm span label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.ty__storyForm span input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.ty__storyForm button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    padding: 0 2rem;
+}
+
+.invalid {
+    color: rgb(165, 56, 56);
+}
+
+.wrongKey {
+    border: 1px solid #35D4C1;
+    border-radius: 8px;
+    width: auto;
+    text-align: center;
+    padding: 1rem 2rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+@keyframes scrolll {
+    0% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.46%, #FFFFFF 10.00%, rgba(255, 255, 255, 0) 94.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    25% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.46%, #FFFFFF 25.00%, rgba(255, 255, 255, 0) 94.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.46%, #FFFFFF 50.00%, rgba(255, 255, 255, 0) 94.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    75% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.46%, #FFFFFF 60.00%, rgba(255, 255, 255, 0) 94.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.46%, #FFFFFF 85.00%, rgba(255, 255, 255, 0) 94.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .story {
+        grid-auto-flow: row;
+        margin-bottom: 2rem;
+    }
+
+    .section__story .story h3 {
+        width: 100%;
+
+    }
+
+    .ty__storyForm {
+        margin: 4rem 0;
+    }
+
+}

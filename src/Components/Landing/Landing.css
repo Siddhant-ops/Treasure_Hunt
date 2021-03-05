@@ -1,0 +1,50 @@
+.ty__Landing__hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url('../images/bg.png');
+    height: 84vh;
+    padding-bottom: 6rem;
+}
+
+.ty__Landing__hero h1 {
+    font-size: 4.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ty__Landing__hero h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.logo {
+    height: auto;
+}
+
+.ty__Landing__hero hr {
+    width: 20px;
+    border: 0px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.ty__Landing__hero a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .ty__Landing__hero {
+        background-position-x: 30%;
+    }
+}

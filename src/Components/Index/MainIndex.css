@@ -1,0 +1,126 @@
+section {
+    display: flex;
+}
+
+.hero,
+.data {
+    width: 50%;
+}
+
+img {
+    height: 70%;
+}
+
+.modalBackdrop {
+    display: grid;
+    place-items: center;
+    background: hsla(0, 0%, 100%, .05%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.modalBackdrop div {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.data div {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.data div span p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.85rem;
+}
+
+.data div span hr {
+    width: 3%;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.data div .info h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+}
+
+.data div .info h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 55%;
+    line-height: 1.5;
+}
+
+.data div .info a {
+    opacity: 0.35;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: fit-content;
+    transition: opacity 150ms ease-in;
+    -webkit-transition: opacity 150ms ease-in;
+    -moz-transition: opacity 150ms ease-in;
+    -ms-transition: opacity 150ms ease-in;
+    -o-transition: opacity 150ms ease-in;
+}
+
+.data div .info a svg {
+    margin-left: 1rem;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+
+.data div .info a:hover {
+    opacity: 1;
+}
+
+.data div .info a:hover svg {
+    transform: rotateZ(-90deg);
+    -webkit-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+    -ms-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+}
+
+.cta h4 {
+    margin: 0%;
+}
